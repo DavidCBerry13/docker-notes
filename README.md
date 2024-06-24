@@ -20,11 +20,12 @@ A repository containing notes and examples using Docker
 
 ## Docker Reference Docs
 
-| **Command**                                                               | **Description**                                       |
-|---------------------------------------------------------------------------|-------------------------------------------------------|
-| [docker build](https://docs.docker.com/reference/cli/docker/image/build/) | Build an image from a Dockerfile                      |
-| [docker init](https://docs.docker.com/reference/cli/docker/init/)         | Creates Docker-related starter files for your project |
-| [docker login](https://docs.docker.com/reference/cli/docker/login/)       | Login to a registry                                   |
-| [docker pull](https://docs.docker.com/reference/cli/docker/image/pull/)   | Download an image from a registry                     |
-| [docker push](https://docs.docker.com/reference/cli/docker/image/push/)   | Upload an image to a registry                         |
-| [docker run](https://docs.docker.com/reference/cli/docker/container/run/) | Create and run a new container from a Docker image    |
+| **Command**                                                                 | **Description**                                       |
+|-----------------------------------------------------------------------------|-------------------------------------------------------|
+| [docker build](https://docs.docker.com/reference/cli/docker/image/build/)   | Build an image from a Dockerfile                      |
+| [docker init](https://docs.docker.com/reference/cli/docker/init/)           | Creates Docker-related starter files for your project |
+| [docker login](https://docs.docker.com/reference/cli/docker/login/)         | Login to a registry                                   |
+| [docker pull](https://docs.docker.com/reference/cli/docker/image/pull/)     | Download an image from a registry                     |
+| [docker push](https://docs.docker.com/reference/cli/docker/image/push/)     | Upload an image to a registry                         |
+| [docker run](https://docs.docker.com/reference/cli/docker/container/run/)   | Create and run a new container from a Docker image    |
+| [docker start](https://docs.docker.com/reference/cli/docker/container/run/) | Starts a container with the provided name             |
