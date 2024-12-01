@@ -50,13 +50,30 @@ For our database example, this means our database files would be stored outside 
 
 The MongoDB image is configured to store its data in the `/data/db` folder in the image.  By mounting this directory to the `C:\data\docker-mongodb` , our mongodb files will be persisted in that directory.
 
+This can be done with the `--mount` option.  If `--mount` is used, then you need to encode the source directory as `//C/data/docker-mongodb` on Windows
+
+```bash
+docker run -d -p 27017:27017 --name mongo-mount-dir -v "type=volume,src=//C/data/docker-mongodb,dst=/data/db" mongo:latest
+```
+
+You can also use the shorter `-v` option which will default to a volume mount.  It also can use a more familiar looking Windows directory name.
+
 ```bash
 docker run -d -p 27017:27017 --name mongo-mount-dir -v "C:\data\docker-mongodb:/data/db" mongo:latest
 ```
 
 This provides a much more robust solution for persisting data outside of a container.  It also means that now the only thing we need to persist on our system is the data.  The database runtime can all be inside of a container.
 
+## Volumes versus Bind Mounts
+
+The method shown here is a [Docker Volume](https://docs.docker.com/engine/storage/volumes/).  Docker also offers [Bind Mounts](https://docs.docker.com/engine/storage/bind-mounts/) that have a very similar syntax.
+
+- Docker sugests that you prefer volumes these days
+- Volumes cannot be modified outside of the Docker process, so for a database or some other form or persisting data, this is usually what you want
+- The use case for Bind Mounts would be during development, when I have a Node.js app and I am mounting and serving the app code directory.  This is when a bind mount would be used.
+
 ## References
 
 - [Mounting folders to a Windows Docker container from a Windows host](https://sarcasticcoder.com/docker/mounting-folders-to-a-windows-docker-container-from-a-windows-host/)
 - [How to Run MongoDB in a Docker Container](https://www.howtogeek.com/devops/how-to-run-mongodb-in-a-docker-container/)
+- [Docker Volumes versus Bind Mounts](https://blog.logrocket.com/docker-volumes-vs-bind-mounts/)
