@@ -31,7 +31,7 @@ docker run -d -p 3333:80 docker/getting-started
 In this example:
 
 - `-d` tells Docker to run the container in detached mode (the background)
-- `-p` provides the port mapping in the form of *<destination-port>:<source-port>*.  In this case, port 80 in the container is being mapped to port 3333 on my localhost.
+- `-p` provides the port mapping in the form of *\<host-port\>:\<container-port\>*.  In this case, port 80 in the container is being mapped to port 3333 on my localhost.
 - `docker/getting-started` is the name of the container to run
 
 After running this command, you can browse to `http://localhost:3333` and you should see a web page of the app that is running inside the Docker container (its a tutorial on Docker).
