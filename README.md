@@ -9,6 +9,12 @@ A repository containing notes and examples using Docker
 - You can specify dependenies in the docker file.  Another dev can just pull your project from source and it runs without needing to manually install those dependencies
 - Faster to start than a VM.  Containers run on top of the OS instead of running a completely separate copy of the OS.  Therefore containers are more lightweight
 
+## Container Registries
+
+- [Docker Hub](https://hub.docker.com/) - The primary and largest registry of container images.  Most things will be here.
+- [Microsoft Artifact Registry](https://mcr.microsoft.com/) - Microsoft maintains its own container registry.  Images for .NET, SQL Server, etc are here.
+
+
 ## Useful Tutorials
 
 - [Docker in Seven Easy Steps](https://www.youtube.com/watch?v=gAkwW2tuIqE) YouTube video by Fireship IO
