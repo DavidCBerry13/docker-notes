@@ -54,7 +54,7 @@ The MongoDB image is configured to store its data in the `/data/db` folder in th
 docker run -d -p 27017:27017 --name mongo-mount-dir -v "C:\data\docker-mongodb:/data/db" mongo:latest
 ```
 
-This provides a much more robus solution for persisting data outside of a container.  It also means that now the only thing we need to persist on our system is the data.  The database runtime can all be inside of a container.
+This provides a much more robust solution for persisting data outside of a container.  It also means that now the only thing we need to persist on our system is the data.  The database runtime can all be inside of a container.
 
 ## References
 
