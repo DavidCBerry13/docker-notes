@@ -20,9 +20,9 @@ Together, the result is you will have a shell prompt in the container where you 
 
 ## Running a Container With an App
 
-A frequenct use case is to containerize an application with Docker.  For example, you can containerize a web application so all of the dependencies it needs are within the container.
+A frequent use case is to containerize an application with Docker.  For example, you can containerize a web application so all of the dependencies it needs are within the container.
 
-This can be demonstrated with the `docker/getting-started` container from Docker
+This can be demonstrated with the [`docker/getting-started`](https://hub.docker.com/r/docker/getting-started) container from Docker
 
 ```bash
 docker run -d -p 3333:80 docker/getting-started
