@@ -88,7 +88,7 @@ This is useful for debugging what is happening
 
 ## Resources
 
-- https://www.serverlab.ca/tutorials/linux/database-servers/how-to-create-a-credential-file-for-mysql/
-- https://github.com/docker/awesome-compose
-
-
+- [Docker Compose Quickstart](https://docs.docker.com/compose/gettingstarted/) - From the official Docker docs
+- [Docker Awesome Compose GitHub Repo](https://github.com/docker/awesome-compose) - Repo containing lots of example Docker Compose configurations to use as a starting point
+- [Handling Docker Secrets the Right Way](https://medium.com/@dariusmurawski/handling-docker-secrets-the-right-way-cc625be3395d) - Article on Medium
+- [Docker Secrets: An Introduction](https://medium.com/@laura_67852/docker-secrets-an-introductory-guide-with-examples-d25be5fc8e50) - Article on Medium
