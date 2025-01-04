@@ -33,7 +33,7 @@ docker run -d -p 5432:5432 --name my-project-postgres -e POSTGRES_PASSWORD=mysec
 
 ## Microsoft SQL Server
 
-Micrsoft Learn Article [Configure and customize SQL Server Linux containers](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-docker-container-configure?view=sql-server-ver16&pivots=cs1-powershell)
+Microsoft Learn Article [Configure and customize SQL Server Linux containers](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-docker-container-configure?view=sql-server-ver16&pivots=cs1-powershell)
 
 ```bash
 docker run -d -p 1433:1433 --name my-project-mssql -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -v "C:\docker-data\my-project\data:/var/opt/mssql/data" -v "C:\docker-data\my-project\log:/var/opt/mssql/log" -v "C:\docker-data\my-project\secrets:/var/opt/mssql/secrets" mcr.microsoft.com/mssql/server:2022-latest
